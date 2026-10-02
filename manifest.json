@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Reels Hider",
+  "version": "1.0.0",
+  "description": "Hide Instagram Reels and Stories from your feed and discover page",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://www.instagram.com/*", "https://www.instagram.com/"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Instagram Reels Hider"
+  }
+}
