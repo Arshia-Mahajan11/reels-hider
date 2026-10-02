@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Reels Hider</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 Reels Hider</h1>
+        </div>
+
+        <div class="settings">
+            <div class="setting-item">
+                <div class="toggle-group">
+                    <span class="label">Hide Reels in Feed</span>
+                    <label class="switch">
+                        <input type="checkbox" id="hideReels">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="description">Hide all reel posts from your main feed</p>
+            </div>
+
+            <div class="setting-item">
+                <div class="toggle-group">
+                    <span class="label">Hide Reels Tab</span>
+                    <label class="switch">
+                        <input type="checkbox" id="hideReelsTab">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="description">Hide the Reels section from navigation</p>
+            </div>
+
+            <div class="setting-item">
+                <div class="toggle-group">
+                    <span class="label">Hide Stories</span>
+                    <label class="switch">
+                        <input type="checkbox" id="hideStories">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="description">Hide story sections from feed</p>
+            </div>
+
+            <div class="setting-item">
+                <div class="toggle-group">
+                    <span class="label">Hide Explore Reels</span>
+                    <label class="switch">
+                        <input type="checkbox" id="hideExploreReels">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="description">Hide reels from discover/explore page</p>
+            </div>
+
+            <div class="setting-item">
+                <div class="toggle-group">
+                    <span class="label">Hide Shorts in Discover</span>
+                    <label class="switch">
+                        <input type="checkbox" id="hideShorts">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="description">Hide short video content from discover</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="resetBtn" class="reset-btn">Reset to Default</button>
+            <p class="version">v1.0.0</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
